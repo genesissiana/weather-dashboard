@@ -7,11 +7,64 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
-<header>
-    <h1>Weather Dashboard</h1>
-</header>
 <body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="./assets/js/script.js"></script>
+    <h1>Weather Dashboard</h1>
+<!-- search for a city -->
+    <div class="container">
+        <div id="searchDiv">
+            <h2 id="searchHeader" class="searchChild">Search for a City:</h2>
+            <textarea id="searchText" class="searchChild"></textarea></br>
+            <button id="searchBtn" class="searchChild">Search</button>
+            <div id="searchHistory" class="searchChild"></div>
+        </div>
+<!-- display search result -->
+        <div class="resultsDiv">
+            <div class="resultCity">
+                <h2 id="resultHeader"></h2>
+                <p id="temp">Temp: <span id="tempResult"></span>° F</p>
+                <p id="wind">Wind: <span id="windResult"></span> MPH</p>
+                <p id="humidity">Humidity: <span id="humidityResult"></span>%</p>
+                <p id="uv">UV Index: <span id="uvResult"></span></p>
+<!-- display 5 day forecast -->
+            <h3 id="fiveDayHeader">5-Day Forecast:</h3>
+            <div class="cardContainer">
+                <div class="card" id="dayOne">
+                    <h4 class="cardHead"></h4>
+                    <img class="cardImg">
+                    <p class="cardTemp">Temp: </p>
+                    <p class="cardWind">Wind: </p>
+                    <p class="cardHumidity">Humidity: </p>
+                </div>
+                <div class="card" id="dayTwo">
+                    <h4 class="cardHead"></h4>
+                    <img class="cardImg">
+                    <p class="cardTemp">Temp: </p>
+                    <p class="cardWind">Wind: </p>
+                    <p class="cardHumidity">Humidity: </p>
+                </div>
+                <div class="card" id="dayThree">
+                    <h4 class="cardHead"></h4>
+                    <img class="cardImg">
+                    <p class="cardTemp">Temp: </p>
+                    <p class="cardWind">Wind: </p>
+                    <p class="cardHumidity">Humidity: </p>
+                </div>
+                <div class="card" id="dayFour">
+                    <h4 class="cardHead"></h4>
+                    <img class="cardImg">
+                    <p class="cardTemp">Temp: </p>
+                    <p class="cardWind">Wind: </p>
+                    <p class="cardHumidity">Humidity: </p>
+                </div>
+                <div class="card" id="dayFive">
+                    <h4 class="cardHead"></h4>
+                    <img class="cardImg">
+                    <p class="cardTemp">Temp: </p>
+                    <p class="cardWind">Wind: </p>
+                    <p class="cardHumidity">Humidity: </p>
+                </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
